@@ -1,7 +1,10 @@
 .header-color{
-  background: #FDC830;  /* fallback for old browsers */
+background: #FDC830;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
 
 /*Desde aca comienza el home*/
@@ -12,7 +15,7 @@ background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, F
 
   /*centrar la foto*/
   text-align: center;
-  position: fixed;
+/*  position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -62,12 +65,30 @@ background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, F
   font-size: 4em;
   padding: 8px;
 }
+
+/*media query*/
+
+@media(max-width:460px){
+  .banner-text h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width:700px){
+  .social-links{
+    display: flex;
+    text-align:center;
+    font-size: .50em;
+  }
+}
+
 /*finaliza el home*/
 
 /*projects*/
 
-.projects-grid{
-  display:flex;
+@media (min-width: 800px){
+  .projects-grid{
+    display:flex
+  }
 }
 /*finaliza projects*/
 
